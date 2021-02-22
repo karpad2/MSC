@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="12/10/20||16:40:03" using="Simscape Multibody Link Version 5.1" from="SolidWorks 28.3.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="inga_v2" uid="inga_v2" version="125">
+<AssemblyFile name="inga_v2.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="kar-3" uid="kar-3" entityUid="kar*:*Default">
+<Transform>
+<Rotation>0.99626329464284868 -1.047444401652926e-14 -0.086368094498931861 0.086368094498931861 0 0.99626329464284868 -1.0435304105459513e-14 -1 9.0465777064337799e-16</Rotation>
+<Translation>0.024843769570278278 0.18579323419432214 0.55612953567950918</Translation>
+</Transform>
+</Instance>
+<Instance name="alap-2" uid="alap-2" grounded="true" entityUid="alap*:*Default">
+<Transform>
+<Rotation>1 -1.04744440165294e-14 6.9829626776862667e-15 -6.9829626776862667e-15 0 1 -1.04744440165294e-14 -1 0</Rotation>
+<Translation>0.00097309152253789721 0.00037751687804044032 0.42387046432049197</Translation>
+</Transform>
+</Instance>
+<Instance name="kar-2" uid="kar-2" entityUid="kar*:*Default">
+<Transform>
+<Rotation>0.99496244119518007 -1.0474444016529293e-14 -0.10024839455536357 0.10024839455536357 0 0.99496244119518007 -1.0421678388848224e-14 -1 1.0500461965171735e-15</Rotation>
+<Translation>0.013615917285417703 0.31530746249789515 0.54612953567950939</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>alap-2</Uid>
+</InstancePath>
+<Position>-0.0003894655293221629 -0.12225907135901753 0.44427506297522901</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>kar-2</Uid>
+</InstancePath>
+<Position>0 0.02161010493525195 0.12999999999999995</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>alap-2</Uid>
+</InstancePath>
+<Position>-0.0003894655293221629 -0.12225907135901753 0.44427506297522901</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>kar-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>kar-2</Uid>
+</InstancePath>
+<Position>0 -0.050000000000000044 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>kar-3</Uid>
+</InstancePath>
+<Position>0 0.02161010493525195 0.13000000000000009</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>kar-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>kar-3</Uid>
+</InstancePath>
+<Position>0 0.010000000000000009 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="alap" uid="alap*:*Default" version="118">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="alap.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>1.2637332804029504</Mass>
+<CenterOfMass>-2.4204900414457749e-06 -0.00044782458202506452 0.19001874400544894</CenterOfMass>
+<Inertia>0.023182360466001101 0.023135146024755675 0.00071302087891472244 0.00014388720110255628 7.7773294050755817e-07 -2.196601680822299e-07</Inertia>
+</MassProperties>
+<GeometryFile name="alap_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.50588235294117645" g="0.52941176470588236" b="0.5490196078431373" a="1"/>
+<Diffuse r="0.50588235294117645" g="0.52941176470588236" b="0.5490196078431373" a="1"/>
+<Specular r="0.25294117647058822" g="0.26470588235294118" b="0.27450980392156865" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="kar" uid="kar*:*Default" version="115">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="kar.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.045484074929921181</Mass>
+<CenterOfMass>0 0.0024098687355710614 0.038246392037695198</CenterOfMass>
+<Inertia>0.00010149981232244783 0.00010094134163521814 8.2286917242286961e-06 -4.5057969094476965e-06 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="kar_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.50588235294117645" g="0.52941176470588236" b="0.5490196078431373" a="1"/>
+<Diffuse r="0.50588235294117645" g="0.52941176470588236" b="0.5490196078431373" a="1"/>
+<Specular r="0.25294117647058822" g="0.26470588235294118" b="0.27450980392156865" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>

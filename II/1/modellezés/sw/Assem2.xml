@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="12/03/20||13:37:22" using="Simscape Multibody Link Version 5.1" from="SolidWorks 28.3.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Assem2" uid="Assem2" version="160">
+<AssemblyFile name="Assem2.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="alap-1" uid="alap-1" grounded="true" entityUid="alap*:*Default">
+<Transform>
+<Rotation>1 0 0 0 2.4440369371901933e-14 1 0 -1 2.4440369371901933e-14</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="inga_2-1" uid="inga_2-1" entityUid="inga_2*:*Default">
+<Transform>
+<Rotation>0.99954226544292379 1.5196017003196719e-16 -0.030253257563907482 -0.030253257563907482 -2.4425575516274126e-14 -0.99954226544292379 -8.9084383985136341e-16 1 -2.44097977961204e-14</Rotation>
+<Translation>0.12527783184414212 0.4591793311949795 -0.071999999999988767</Translation>
+</Transform>
+</Instance>
+<Instance name="rud2-1" uid="rud2-1" grounded="true" entityUid="rud2*:*Default">
+<Transform>
+<Rotation>1 0 0 0 -2.4440369371901933e-14 -1 0 1 -2.4440369371901933e-14</Rotation>
+<Translation>0.125 0.45000000000000123 -0.049999999999988984</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>alap-1</Uid>
+</InstancePath>
+<Position>0.125 0.94421359874900601 0.45000000000000001</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>rud2-1</Uid>
+</InstancePath>
+<Position>0 0.050000000000000003 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>alap-1</Uid>
+</InstancePath>
+<Position>0 -0.025000000000000001 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>rud2-1</Uid>
+</InstancePath>
+<Position>0 0.074999999999999997 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>inga_2-1</Uid>
+</InstancePath>
+<Position>0 -0.0030000000000000027 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>rud2-1</Uid>
+</InstancePath>
+<Position>0 -0.025000000000000015 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>inga_2-1</Uid>
+</InstancePath>
+<Position>0 0.0084226455100083752 0.0091835348162194186</Position>
+<Axis>1.0842021724855547e-16 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>rud2-1</Uid>
+</InstancePath>
+<Position>0 0.050000000000000003 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="alap" uid="alap*:*Default" version="115">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="alap.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>3.1245091261478763</Mass>
+<CenterOfMass>0.12500000000000003 -0.012500000000000001 0.24996857913788662</CenterOfMass>
+<Inertia>0.065247262711175591 0.08136056876053166 0.016438775749996463 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="alap_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.50588235294117645" g="0.52941176470588236" b="0.5490196078431373" a="1"/>
+<Diffuse r="0.50588235294117645" g="0.52941176470588236" b="0.5490196078431373" a="1"/>
+<Specular r="0.25294117647058822" g="0.26470588235294118" b="0.27450980392156865" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="inga_2" uid="inga_2*:*Default" version="115">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="inga_2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.078894784063906709</Mass>
+<CenterOfMass>-1.6054346219492645e-10 6.2037608213981087e-06 0.18116256265441635</CenterOfMass>
+<Inertia>0.00018599925752305508 0.00018600183892910848 1.6530424223026061e-05 8.2800009390066183e-08 -1.9117035482019978e-12 2.4307593738058093e-14</Inertia>
+</MassProperties>
+<GeometryFile name="inga_2_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.50588235294117645" g="0.52941176470588236" b="0.5490196078431373" a="1"/>
+<Diffuse r="0.50588235294117645" g="0.52941176470588236" b="0.5490196078431373" a="1"/>
+<Specular r="0.25294117647058822" g="0.26470588235294118" b="0.27450980392156865" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="rud2" uid="rud2*:*Default" version="115">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="rud2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0019634954084942337</Mass>
+<CenterOfMass>0 0.025000000000000005 0</CenterOfMass>
+<Inertia>1.6393141353209682e-06 6.1359231515463933e-09 1.6393141353209682e-06 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="rud2_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.50588235294117645" g="0.52941176470588236" b="0.5490196078431373" a="1"/>
+<Diffuse r="0.50588235294117645" g="0.52941176470588236" b="0.5490196078431373" a="1"/>
+<Specular r="0.25294117647058822" g="0.26470588235294118" b="0.27450980392156865" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>

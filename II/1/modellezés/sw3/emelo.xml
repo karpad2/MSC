@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="12/10/20||15:16:42" using="Simscape Multibody Link Version 5.1" from="SolidWorks 28.3.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="emelo" uid="emelo" version="129">
+<AssemblyFile name="emelo.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="menettarto-1" uid="menettarto-1" entityUid="menettarto*:*Default">
+<Transform>
+<Rotation>-1.1102230246251565e-16 -1 0 1 -1.1102230246251565e-16 0 0 0 0.99999999999999967</Rotation>
+<Translation>-0.13412798247670016 -0.010534780011717815 0.49633164691644988</Translation>
+</Transform>
+</Instance>
+<Instance name="tarto2-1" uid="tarto2-1" grounded="true" entityUid="tarto2*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.1341279824767001 -0.010534780011718651 -0.030692471072348248</Translation>
+</Transform>
+</Instance>
+<Instance name="anya-1" uid="anya-1" entityUid="anya*:*Default">
+<Transform>
+<Rotation>-0.93913546224159394 0.34354706163823834 0 -0.34354706163823834 -0.93913546224159394 0 0 0 0.99999999999999989</Rotation>
+<Translation>-0.1341279824767001 -0.010534780011718649 0.40264086226098472</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>anya-1</Uid>
+</InstancePath>
+<Position>0 0 0.12433899449940994</Position>
+<Axis>0 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cone">
+<InstancePath>
+<Uid>tarto2-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>anya-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>tarto2-1</Uid>
+</InstancePath>
+<Position>0 0 0.43333333333333296</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<UnknownConstraint name="Screw1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>anya-1</Uid>
+</InstancePath>
+<Position>0 0 0.12433899449940994</Position>
+<Axis>0 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>menettarto-1</Uid>
+</InstancePath>
+<Position>0 0 -0.29999999999999977</Position>
+<Axis>0 0 0.99999999999999967</Axis>
+</ConstraintGeometry>
+</UnknownConstraint>
+<Parallel name="Parallel2">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>menettarto-1</Uid>
+</InstancePath>
+<Position>0.050000000000000003 -0.049999999999999989 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>emelo</Uid>
+</InstancePath>
+<Position>-0.1341279824767001 -0.010534780011718651 -0.030692471072348248</Position>
+<Axis>0.99999999999999989 0 0</Axis>
+</ConstraintGeometry>
+</Parallel>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="anya" uid="anya*:*Default" version="115">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="anya.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.21155972903127027</Mass>
+<CenterOfMass>0 -0.022552939845816588 0.010794923417117812</CenterOfMass>
+<Inertia>0.00075086381804893724 9.7033137578026504e-05 0.00078682484723681823 1.8928559389454949e-05 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="anya_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.50588235294117645" g="0.52941176470588236" b="0.5490196078431373" a="1"/>
+<Diffuse r="0.50588235294117645" g="0.52941176470588236" b="0.5490196078431373" a="1"/>
+<Specular r="0.25294117647058822" g="0.26470588235294118" b="0.27450980392156865" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="menettarto" uid="menettarto*:*Default" version="115">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="menettarto.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.17634070148223205</Mass>
+<CenterOfMass>0 0 -0.062101971526058675</CenterOfMass>
+<Inertia>0.0016983483856423316 0.0016983483856423316 0.00016975846507669718 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="menettarto_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.50588235294117645" g="0.52941176470588236" b="0.5490196078431373" a="1"/>
+<Diffuse r="0.50588235294117645" g="0.52941176470588236" b="0.5490196078431373" a="1"/>
+<Specular r="0.25294117647058822" g="0.26470588235294118" b="0.27450980392156865" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="tarto2" uid="tarto2*:*Default" version="115">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="tarto2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>1.7016960206944707</Mass>
+<CenterOfMass>0 0 0.17911111111111094</CenterOfMass>
+<Inertia>0.028471890205212028 0.028471890205212042 0.0084872089032136649 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="tarto2_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.50588235294117645" g="0.52941176470588236" b="0.5490196078431373" a="1"/>
+<Diffuse r="0.50588235294117645" g="0.52941176470588236" b="0.5490196078431373" a="1"/>
+<Specular r="0.25294117647058822" g="0.26470588235294118" b="0.27450980392156865" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="12/03/20||14:18:26" using="Simscape Multibody Link Version 5.1" from="SolidWorks 28.3.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Assem" uid="Assem" version="106">
+<AssemblyFile name="Assem.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="alap-1" uid="alap-1" grounded="true" entityUid="alap*:*Default">
+<Transform>
+<Rotation>-1 0 -6.9829626776862667e-15 -6.9829626776862667e-15 3.4914813388431334e-15 1 0 1 -3.4914813388431334e-15</Rotation>
+<Translation>0.1245574688332618 -0.029469685417021024 0.51250000000000273</Translation>
+</Transform>
+</Instance>
+<Instance name="inga-1" uid="inga-1" entityUid="inga*:*Default">
+<Transform>
+<Rotation>0.42322496835186774 0 -0.90602462779085691 -0.90602462779085691 3.3932499518655283e-15 -0.42322496835186774 3.0549478632155462e-15 1 1.477682079133007e-15</Rotation>
+<Translation>0.0091660331651253132 0.42501869625663885 0.59050000000000102</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>alap-1</Uid>
+</InstancePath>
+<Position>0.12499999999999999 0.03874656769539242 0.45000000000000001</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>inga-1</Uid>
+</InstancePath>
+<Position>0 -0.10299999999999998 0.010605191114169576</Position>
+<Axis>-1.0842021724855123e-16 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>alap-1</Uid>
+</InstancePath>
+<Position>0 -0.025000000000000022 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>inga-1</Uid>
+</InstancePath>
+<Position>0 -0.10299999999999998 0.010605191114169576</Position>
+<Axis>-1.0842021724855123e-16 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="alap" uid="alap*:*Default" version="115">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="alap.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>3.1245091261478763</Mass>
+<CenterOfMass>0.12500000000000003 -0.012500000000000001 0.24996857913788662</CenterOfMass>
+<Inertia>0.065247262711175591 0.08136056876053166 0.016438775749996463 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="alap_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.50588235294117645" g="0.52941176470588236" b="0.5490196078431373" a="1"/>
+<Diffuse r="0.50588235294117645" g="0.52941176470588236" b="0.5490196078431373" a="1"/>
+<Specular r="0.25294117647058822" g="0.26470588235294118" b="0.27450980392156865" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="inga" uid="inga*:*Default" version="115">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="inga.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.081012169050806923</Mass>
+<CenterOfMass>0 -0.0012767728031443304 0.17670206244432923</CenterOfMass>
+<Inertia>0.00025308071340232743 0.00024606603184456932 2.355429388123032e-05 -1.7180561949055124e-05 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="inga_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.50588235294117645" g="0.52941176470588236" b="0.5490196078431373" a="1"/>
+<Diffuse r="0.50588235294117645" g="0.52941176470588236" b="0.5490196078431373" a="1"/>
+<Specular r="0.25294117647058822" g="0.26470588235294118" b="0.27450980392156865" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
