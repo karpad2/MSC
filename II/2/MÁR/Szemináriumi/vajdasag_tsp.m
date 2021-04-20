@@ -1,3 +1,4 @@
+% By Virag D & Kovacs A
 % Ez a program két város között keresi meg a legrövidebb utat.
 % 
 % Minden városnak van azonosítója
